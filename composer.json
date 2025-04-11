@@ -1,0 +1,15 @@
+{
+    "name": "baikov/work7",
+    "type": "work7",
+    "autoload": {
+        "psr-4": {
+            "Baikov\\Work7\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ivan"
+        }
+    ],
+    "require": {}
+}
