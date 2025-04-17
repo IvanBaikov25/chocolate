@@ -1,0 +1,15 @@
+{
+    "name": "baikov/chocolate",
+    "type": "chocolate",
+    "autoload": {
+        "psr-4": {
+            "Baikov\\Chocolate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ivan"
+        }
+    ],
+    "require": {}
+}
