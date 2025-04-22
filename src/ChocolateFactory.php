@@ -2,7 +2,9 @@
 
 namespace Baikov\Chocolate;
 
+use Baikov\Chocolate\Snack;
 use InvalidArgumentException;
+
 class ChocolateFactory
 {
     public function orderSnack(string $type): void
@@ -12,7 +14,7 @@ class ChocolateFactory
         $snack->cut();
     }
 
-    private function createSnack(string $type): Snack
+    protected function createSnack(string $type): Snack 
     {
         switch ($type) {
             case 'chocolate_bar':
@@ -26,3 +28,4 @@ class ChocolateFactory
         }
     }
 }
+
