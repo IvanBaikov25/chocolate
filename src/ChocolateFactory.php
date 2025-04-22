@@ -1,7 +1,9 @@
 <?php
 
 namespace Baikov\Chocolate;
-
+use Baikov\Chocolate1\ChocolateBar;
+use Baikov\Chocolate1\ChocolateCake;
+use Baikov\Chocolate1\ChocolateCookie;
 use Baikov\Chocolate\Snack;
 use InvalidArgumentException;
 
