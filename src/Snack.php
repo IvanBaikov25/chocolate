@@ -6,9 +6,9 @@ abstract class Snack
 {
     protected string $name;
     protected string $chocolate;
-    protected array $toppings;
+    protected array $toppings = [];
 
-    public function __construct(string $name, string $chocolate, array $toppings)
+    public function __construct(string $name, string $chocolate, array $toppings = [])
     {
         $this->name = $name;
         $this->chocolate = $chocolate;
@@ -17,13 +17,10 @@ abstract class Snack
 
     public function prepare(): void
     {
-        echo "Началась создание snack-а {$this->name}\n";
+        echo "Началось создание snack-а {$this->name}\n";
         echo "Добавляется шоколад {$this->chocolate}\n";
         echo "Добавлены начинок: " . implode(", ", $this->toppings) . "\n";
     }
 
-    public function cut(): void
-    {
-        echo "Snack нужно резать по вертикали.\n";
-    }
+    abstract public function cut(): void;
 }
